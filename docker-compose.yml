@@ -1,0 +1,11 @@
+
+services:
+  prediction-api:
+    image: mohsinn05/linear-regression-api:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fa23-bds-021-api
+    ports:
+      - "5000:5000"
+    restart: "no"
